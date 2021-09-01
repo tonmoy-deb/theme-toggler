@@ -1,0 +1,47 @@
+:root {
+  --background: #f6f6f6;
+  --theme: #006bff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+
+  &.dark-theme {
+    --background: #111a28;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.theme-btn {
+  background-color: var(--theme);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--background);
+  }
+}
